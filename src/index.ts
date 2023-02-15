@@ -51,13 +51,17 @@ interface Answers {
   isLoser: boolean;
 }
 
-await inquirer.prompt(questions).then((answers: Answers) => {
-  answers.isLoser = true;
+const rudeQuestionnaire = async () => {
+  await inquirer.prompt(questions).then((answers: Answers) => {
+    answers.isLoser = true;
 
-  const user = {
-    name: answers.first_name,
-    isLoser: answers.isLoser,
-  };
+    const user = {
+      name: answers.first_name,
+      isLoser: answers.isLoser,
+    };
 
-  console.log(chalk.green(JSON.stringify(user)));
-});
+    console.log(chalk.green(JSON.stringify(user)));
+  });
+};
+
+await rudeQuestionnaire();

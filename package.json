@@ -1,8 +1,8 @@
 {
   "name": "w6ch3",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "cli-app",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install"
@@ -18,6 +18,8 @@
     "eslint-config-xo": "^0.43.1",
     "eslint-config-xo-typescript": "^0.56.0",
     "husky": "^8.0.0",
+    "lint-staged": "^13.1.2",
+    "prettier": "^2.8.4",
     "typescript": "^4.9.5"
   },
   "dependencies": {
